@@ -1,1 +1,37 @@
+class Player:
+   def __init__(self,hitpoints,mana,vocation,hechizo):
+      self.hitpoints = hitpoints
+      self.mana = mana
+      self.vocation = vocation
+      self.hechizo = hechizo 
+   def lanzar_hechizo(self):
+      return self.hechizo 
 
+
+sorcerer = Player(40,80,"sorcerer","utevo lux")
+print("\nEl sorcerer tiene:")
+print("hit points: "+ str(sorcerer.hitpoints))
+print("mana: "+ str(sorcerer.mana))
+print("vocation: "+ sorcerer.vocation)
+print("hechizo: "+ sorcerer.lanzar_hechizo())
+
+knight = Player(80,20,"knight","exori")
+print("\nEl knight tiene:")
+print("hit points: "+ str(knight.hitpoints))
+print("mana: "+ str(knight.mana))
+print("vocation: "+ knight.vocation)
+print("hechizo: "+ knight.lanzar_hechizo())
+
+paladin = Player(90,10,"paladin","bizzz")
+print("\nEl paladin tiene:")
+print("hit points: "+ str(paladin.hitpoints))
+print("mana: "+ str(paladin.mana))
+print("vocation: "+ paladin.vocation)
+print("hechizo: "+ paladin.lanzar_hechizo())
+
+druid = Player(50,70,"druid","fireball")
+print("\nEl druid tiene:")
+print("hit points: "+ str(druid.hitpoints))
+print("mana: "+ str(druid.mana))
+print("vocation: "+ druid.vocation)
+print("hechizo: "+ druid.lanzar_hechizo())
